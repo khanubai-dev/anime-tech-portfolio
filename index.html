@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090512">
+    <meta name="description" content="Ubai Khan anime-inspired romance tech portfolio with interactive projects, skills, story timeline, AI assistant, and contact.">
+    <title>Ubai Khan | Anime Tech Portfolio</title>
+    <link rel="preload" href="assets/anime-romance-hero.png" as="image">
+    <link rel="preload" href="assets/ai-assistant.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand magnetic" href="#top" aria-label="Back to first screen"><span>UK</span><strong>Ubai Khan</strong></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#story">Story</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#agent">AI Agent</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="header-action magnetic" type="button" data-open-chat>Ask Airi</button>
+    </header>
+
+    <main id="top">
+      <section class="hero scene" aria-labelledby="hero-title">
+        <img class="hero-art" src="assets/anime-romance-hero.png" alt="Original anime-style characters on a neon city rooftop with holographic code panels.">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="city-grid" aria-hidden="true"></div>
+
+        <div class="hero-content" data-reveal>
+          <p class="episode">Episode 01 / Neon Hearts Compile</p>
+          <h1 id="hero-title">Ubai Khan</h1>
+          <p class="hero-title">Incoming AI Engineering Student</p>
+          <p class="hero-tagline">A futuristic portfolio where code meets emotion, anime romance meets AI ambition, and every scroll opens a new scene in my story.</p>
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="#story">View My Story</a>
+            <a class="button secondary magnetic" href="#projects">Projects</a>
+            <a class="button ghost magnetic" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="novel-card glass" data-reveal>
+          <div class="speaker">
+            <img src="assets/ai-assistant.png" alt="Original anime AI assistant portrait.">
+            <div><span>Airi / Portfolio Agent</span><strong>Connection stable</strong></div>
+          </div>
+          <p>Welcome, visitor. This is Ubai's interactive story system. Choose a chapter, inspect a project, or ask me to guide you.</p>
+        </aside>
+      </section>
+
+      <section id="story" class="story scene" aria-labelledby="story-title">
+        <div class="section-head" data-reveal>
+          <p class="episode">Episode 02 / About Me</p>
+          <h2 id="story-title">The story starts with curiosity.</h2>
+        </div>
+        <div class="dialogue-stage">
+          <article class="dialogue-box glass" data-reveal><span>Ubai</span><p>I am preparing to study AI Engineering and I am drawn to systems that can learn, assist, predict, and make complex work easier.</p></article>
+          <article class="dialogue-box glass" data-reveal><span>Airi</span><p>His background in pharmaceutical operations gives him a practical reason to care about automation, demand forecasting, and data.</p></article>
+          <article class="dialogue-box glass" data-reveal><span>Goal</span><p>Build AI-powered tools with a human interface: useful, beautiful, emotionally clear, and technically disciplined.</p></article>
+        </div>
+        <div class="story-cards">
+          <article class="story-card glass tilt-card" data-reveal><span>01</span><h3>What I Like</h3><p>AI tools, digital design, anime visuals, technology, business ideas, football, boxing, swimming, and reading.</p></article>
+          <article class="story-card glass tilt-card" data-reveal><span>02</span><h3>What I Am Learning</h3><p>Python basics, HTML, CSS, JavaScript, beginner data analysis, prompt workflows, and software thinking.</p></article>
+          <article class="story-card glass tilt-card" data-reveal><span>03</span><h3>What Makes Me Different</h3><p>I connect operational experience with AI ambition, so my ideas start from real problems, not abstract demos.</p></article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects scene" aria-labelledby="projects-title">
+        <div class="section-head" data-reveal>
+          <p class="episode">Episode 03 / Work Samples</p>
+          <h2 id="projects-title">Project cards that open like scenes.</h2>
+          <p>Sample concepts are included until you replace them with live repositories.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 01</span><h3>Anime Portfolio Website</h3><p>Romance visual novel portfolio with animated background, story panels, and cinematic sections.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JS</b></div></div><div class="project-face back"><p>Features: character-led hero, visual novel dialogue, chatbot, responsive project detail pages.</p><a href="projects/anime-portfolio.html">Open Detail</a></div></article>
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 02</span><h3>AI Chatbot Assistant</h3><p>Assistant concept that guides visitors through profile, projects, skills, and contact.</p><div class="tags"><b>AI Tools</b><b>UX</b><b>Chat</b></div></div><div class="project-face back"><p>Features: guided answers, quick prompts, floating window, polished response states.</p><a href="projects/ai-chatbot.html">Open Detail</a></div></article>
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 03</span><h3>Discord Community Landing Page</h3><p>Community landing page concept for onboarding members and presenting rules clearly.</p><div class="tags"><b>Discord</b><b>Community</b><b>Web</b></div></div><div class="project-face back"><p>Features: member paths, event panels, social links, moderation-friendly structure.</p><a href="projects/discord-community.html">Open Detail</a></div></article>
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 04</span><h3>Student Productivity Dashboard</h3><p>Dashboard for learning tasks, focus sessions, deadlines, and academic progress.</p><div class="tags"><b>Dashboard</b><b>Data</b><b>UI</b></div></div><div class="project-face back"><p>Features: progress stats, task cards, weekly views, focus tracking, clean interface.</p><a href="projects/student-dashboard.html">Open Detail</a></div></article>
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 05</span><h3>Mini Game Web App</h3><p>Small browser game concept with anime UI, score logic, levels, and animated feedback.</p><div class="tags"><b>Game</b><b>JavaScript</b><b>Canvas</b></div></div><div class="project-face back"><p>Features: keyboard controls, score state, particle feedback, responsive play surface.</p><a href="projects/mini-game.html">Open Detail</a></div></article>
+          <article class="project-card glass" data-reveal><div class="project-face front"><span>Scene 06</span><h3>Personal Blog Website</h3><p>Writing system for AI learning notes, technology reflections, and project logs.</p><div class="tags"><b>Writing</b><b>HTML</b><b>Content</b></div></div><div class="project-face back"><p>Features: article cards, topic filters, learning timeline, clean reading layout.</p><a href="projects/personal-blog.html">Open Detail</a></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills scene" aria-labelledby="skills-title">
+        <div class="section-head" data-reveal><p class="episode">Episode 04 / Power Stats</p><h2 id="skills-title">Skills dashboard with anime-style energy.</h2></div>
+        <div class="skills-layout">
+          <div class="power-core glass" data-reveal><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><strong>AI</strong><span>Learning Core</span></div>
+          <div class="skill-list" data-reveal>
+            <div class="skill" data-level="76"><span>Web Design</span><i></i></div>
+            <div class="skill" data-level="72"><span>HTML, CSS, JavaScript</span><i></i></div>
+            <div class="skill" data-level="68"><span>AI Tools</span><i></i></div>
+            <div class="skill" data-level="64"><span>Chatbot Creation</span><i></i></div>
+            <div class="skill" data-level="74"><span>UI/UX Design</span><i></i></div>
+            <div class="skill" data-level="70"><span>GitHub</span><i></i></div>
+            <div class="skill" data-level="84"><span>Communication</span><i></i></div>
+            <div class="skill" data-level="88"><span>Creativity</span><i></i></div>
+            <div class="skill" data-level="80"><span>Problem Solving</span><i></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience scene" aria-labelledby="experience-title">
+        <div class="section-head" data-reveal><p class="episode">Episode 05 / Timeline</p><h2 id="experience-title">A journey told as chapters.</h2></div>
+        <div class="timeline">
+          <article class="chapter glass" data-reveal><span>Chapter 01</span><h3>Scientific Foundation</h3><p>Completed scientific baccalaureate at Gyaan Sagar High School, building early discipline for technical learning.</p></article>
+          <article class="chapter glass" data-reveal><span>Chapter 02</span><h3>Operations Experience</h3><p>Worked as Assistant Manager at Metralco Pharmaceuticals LTD, supervising operations, stock, sales analysis, and process improvement.</p></article>
+          <article class="chapter glass" data-reveal><span>Chapter 03</span><h3>AI Direction</h3><p>Started connecting real stock management problems with AI ideas such as demand forecasting and logistics optimization.</p></article>
+          <article class="chapter glass" data-reveal><span>Chapter 04</span><h3>CESI Toulouse</h3><p>Preparing to begin a Bachelor in Artificial Intelligence in Toulouse, France.</p></article>
+        </div>
+      </section>
+
+      <section id="agent" class="agent scene" aria-labelledby="agent-title">
+        <div class="agent-panel glass" data-reveal>
+          <img src="assets/ai-assistant.png" alt="Original anime AI assistant Airi.">
+          <div><p class="episode">Episode 06 / AI Agent</p><h2 id="agent-title">Meet Airi, the portfolio guide.</h2><p>Airi can answer common visitor questions about Ubai, his projects, his skills, his AI studies, and how to contact him.</p><button class="button primary magnetic" type="button" data-open-chat>Open Chatbot</button></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact scene" aria-labelledby="contact-title">
+        <div class="section-head" data-reveal><p class="episode">Final Episode / Contact</p><h2 id="contact-title">Send a signal across the skyline.</h2></div>
+        <div class="contact-grid">
+          <div class="contact-details glass" data-reveal>
+            <p><span>Email</span> khanubai@outlook.com</p>
+            <p><span>Phone</span> +256754803099</p>
+            <p><span>Location</span> Toulouse, France</p>
+            <p><span>GitHub</span> github.com/khanubai-dev</p>
+            <p><span>Discord</span> alan_le10</p>
+            <div class="socials"><a href="https://github.com/khanubai-dev" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/khanubai-dev" target="_blank" rel="noreferrer">GitHub Profile</a></div>
+          </div>
+          <form class="contact-form glass" data-reveal>
+            <label>Name <input name="name" placeholder="Your name"></label>
+            <label>Email <input name="email" type="email" placeholder="you@example.com"></label>
+            <label>Message <textarea name="message" rows="5" placeholder="Write your message..."></textarea></label>
+            <button class="button primary magnetic" type="submit">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="chat-fab magnetic" type="button" data-open-chat aria-label="Open AI assistant chat"><img src="assets/ai-assistant.png" alt=""><span>Airi</span></button>
+    <section class="chat-window glass" aria-label="AI assistant chatbot" aria-hidden="true">
+      <div class="chat-head"><img src="assets/ai-assistant.png" alt="Airi assistant avatar."><div><strong>Airi</strong><span>Portfolio guide online</span></div><button type="button" data-close-chat aria-label="Close chatbot">x</button></div>
+      <div class="chat-log" data-chat-log><p class="bot">Hi. I am Airi. Ask about Ubai's story, projects, skills, AI studies, GitHub, or Discord.</p></div>
+      <div class="quick-prompts"><button type="button" data-prompt="Who is Ubai?">Who is Ubai?</button><button type="button" data-prompt="Show projects">Projects</button><button type="button" data-prompt="How can I contact him?">Contact</button></div>
+      <form class="chat-form" data-chat-form><input name="message" autocomplete="off" placeholder="Ask Airi anything..."><button type="submit">Send</button></form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
